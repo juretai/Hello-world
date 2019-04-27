@@ -10,7 +10,7 @@
     <groupId>com.example</groupId>
     <artifactId>demo</artifactId>
     <version>1.1-SNAPSHOT</version>
-    <name>demo</name>
+    <name>demo-hello-world</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -27,6 +27,19 @@
             <url>https://repo.maven.apache.org/maven2/</url>
         </repository>
     </repositories>
+    
+    <distributionManagement>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>bookker-artifactory-snapshots</name>
+            <url>http://34.250.189.32:8081/artifactory/libs-snapshot-local</url>
+        </snapshotRepository>
+        <repository>
+            <id>central</id>
+            <name>bookker-artifactory-releases</name>
+            <url>http://34.250.189.32:8081/artifactory/libs-release-local</url>
+        </repository>
+    </distributionManagement>
          
     <dependencies>
         <dependency>
