@@ -17,6 +17,10 @@
     <properties>
         <java.version>1.8</java.version>
     </properties>
+    
+     <scm>
+        <connection>scm:git:https://github.com/juretai/Hello-world.git</connection>
+    </scm>
 
     <dependencies>
         <dependency>
